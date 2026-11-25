@@ -143,6 +143,10 @@ window.MCKMED_TRADUCOES = {
   'Procurando outro item?': ['Looking for another item?', '在找其他产品？'],
   'No catálogo completo você encontra toda a linha de produtos da MCKMED.':
     ['Our full catalog has the complete MCKMED product line.', '完整产品目录中有 MCKMED 的全部产品。'],
+  'Catálogo': ['Catalog', '产品目录'],
+  'Catálogo completo ↗': ['Full catalog ↗', '完整产品目录 ↗'],
+  'Ver catálogo': ['See catalog', '查看目录'],
+  'Ver catálogo de produtos': ['See product catalog', '查看产品目录'],
   'Abrir catálogo': ['Open catalog', '打开产品目录'],
 
   // ---------- Como pedir ----------
