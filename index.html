@@ -22,8 +22,8 @@
       </a>
 
       <nav class="nav" id="menu" aria-label="Principal">
-        <a href="#quem-somos">Quem somos</a>
         <a href="#atendemos">Quem atendemos</a>
+        <a href="#quem-somos">Quem somos</a>
         <a href="#produtos">Produtos</a>
         <a href="#pedido">Como pedir</a>
         <a href="#duvidas">Dúvidas</a>
@@ -31,6 +31,38 @@
       </nav>
 
       <a href="#contato" class="btn btn--sm btn--verde header__cta">Pedir orçamento</a>
+
+      <!-- Seletor de idioma (traduções em js/idiomas.js) -->
+      <div class="idiomas" role="group" aria-label="Idioma">
+        <button type="button" class="idioma" data-idioma="pt" lang="pt-BR" aria-label="Português" title="Português" aria-pressed="true">
+          <svg viewBox="0 0 30 20" aria-hidden="true">
+            <rect width="30" height="20" fill="#009C3B"/>
+            <polygon points="15,2 28,10 15,18 2,10" fill="#FFDF00"/>
+            <circle cx="15" cy="10" r="4.6" fill="#002776"/>
+            <path d="M10.6 9.2c3-1 6.3-.6 8.8 1.2" fill="none" stroke="#FFFFFF" stroke-width=".9"/>
+          </svg>
+        </button>
+        <button type="button" class="idioma" data-idioma="en" lang="en" aria-label="English" title="English" aria-pressed="false">
+          <svg viewBox="0 0 30 20" aria-hidden="true">
+            <rect width="30" height="20" fill="#B22234"/>
+            <path d="M0 2.3h30M0 5.4h30M0 8.5h30M0 11.5h30M0 14.6h30M0 17.7h30" stroke="#FFFFFF" stroke-width="1.54"/>
+            <rect width="13" height="10.8" fill="#3C3B6E"/>
+            <g fill="#FFFFFF"><circle cx="2.2" cy="2" r=".55"/><circle cx="5.2" cy="2" r=".55"/><circle cx="8.2" cy="2" r=".55"/><circle cx="11.2" cy="2" r=".55"/><circle cx="3.7" cy="4.2" r=".55"/><circle cx="6.7" cy="4.2" r=".55"/><circle cx="9.7" cy="4.2" r=".55"/><circle cx="2.2" cy="6.4" r=".55"/><circle cx="5.2" cy="6.4" r=".55"/><circle cx="8.2" cy="6.4" r=".55"/><circle cx="11.2" cy="6.4" r=".55"/><circle cx="3.7" cy="8.6" r=".55"/><circle cx="6.7" cy="8.6" r=".55"/><circle cx="9.7" cy="8.6" r=".55"/></g>
+          </svg>
+        </button>
+        <button type="button" class="idioma" data-idioma="zh" lang="zh-CN" aria-label="中文" title="中文" aria-pressed="false">
+          <svg viewBox="0 0 30 20" aria-hidden="true">
+            <rect width="30" height="20" fill="#DE2910"/>
+            <g fill="#FFDE00">
+              <polygon points="5.00,2.00 5.67,4.07 7.85,4.07 6.09,5.35 6.76,7.43 5.00,6.15 3.24,7.43 3.91,5.35 2.15,4.07 4.33,4.07"/>
+              <polygon points="9.14,2.51 9.62,1.97 9.25,1.34 9.91,1.63 10.39,1.08 10.33,1.80 11.00,2.09 10.29,2.25 10.22,2.97 9.85,2.35"/>
+              <polygon points="11.01,4.14 11.66,3.82 11.56,3.10 12.07,3.62 12.72,3.30 12.38,3.95 12.88,4.47 12.17,4.34 11.83,4.99 11.73,4.27"/>
+              <polygon points="11.04,6.73 11.76,6.70 11.96,6.00 12.21,6.68 12.94,6.66 12.37,7.10 12.62,7.79 12.01,7.38 11.44,7.83 11.64,7.13"/>
+              <polygon points="9.22,8.38 9.90,8.63 10.35,8.06 10.32,8.79 11.00,9.05 10.30,9.24 10.26,9.96 9.87,9.36 9.16,9.55 9.62,8.98"/>
+            </g>
+          </svg>
+        </button>
+      </div>
 
       <!-- Menu "hambúrguer" (só aparece em telas menores) -->
       <button type="button" class="menu-btn" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
@@ -49,7 +81,7 @@
           <p class="hero__texto">Infusão, acesso venoso, monitorização e proteção para hospitais, clínicas e serviços de saúde. Você escolhe o item e a opção, nós enviamos preço, prazo e condições.</p>
           <div class="hero__acoes">
             <a href="#produtos" class="btn btn--azul">Ver produtos</a>
-            <a href="https://wa.me/5511900000000" class="btn btn--contorno">Falar no WhatsApp</a>
+            <a href="https://wa.me/5511969045009" class="btn btn--contorno">Falar no WhatsApp</a>
           </div>
         </div>
         <img src="img/logo.jpg" alt="Logo MCKMED">
@@ -69,9 +101,47 @@
       </svg>
     </section>
 
+    <!-- ========== QUEM ATENDEMOS ========== -->
+    <section id="atendemos" class="faixa-branca">
+      <div class="container atendemos">
+        <div class="atendemos__topo">
+          <h2 class="titulo-secao">Quem compra com a gente</h2>
+        </div>
+
+        <ul class="segmentos">
+          <li class="segmento">
+            <h3>Hospitais</h3>
+            <p>Reposição para enfermaria, UTI e centro cirúrgico, com pedidos programados.</p>
+          </li>
+          <li class="segmento">
+            <h3>Clínicas</h3>
+            <p>O material do dia a dia: equipos, jelcos, luvas e eletrodos.</p>
+          </li>
+          <li class="segmento">
+            <h3>Laboratórios</h3>
+            <p>Cateteres e itens de punção para a rotina de coleta.</p>
+          </li>
+          <li class="segmento">
+            <h3>Home care</h3>
+            <p>Reposição para pacientes que são atendidos em casa.</p>
+          </li>
+          <li class="segmento">
+            <h3>Consultórios</h3>
+            <p>Pedidos pequenos, sem burocracia.</p>
+          </li>
+          <li class="segmento">
+            <h3>Prefeituras e órgãos públicos</h3>
+            <p>Com a documentação que o processo de compra pede.</p>
+          </li>
+        </ul>
+
+        <p class="atendemos__rodape">Seu serviço não está na lista? <a href="#contato">Conta pra gente o que você precisa.</a></p>
+      </div>
+    </section>
+
     <!-- ========== QUEM SOMOS ========== -->
     <!-- [Textos de exemplo: ajustar com a história, missão, visão e valores reais da MCKMED] -->
-    <section id="quem-somos" class="faixa-branca">
+    <section id="quem-somos">
       <div class="container sobre">
         <div class="sobre__texto">
           <span class="sobretitulo">Quem somos</span>
@@ -112,44 +182,6 @@
       </div>
     </section>
 
-    <!-- ========== QUEM ATENDEMOS ========== -->
-    <section id="atendemos">
-      <div class="container atendemos">
-        <div class="atendemos__topo">
-          <h2 class="titulo-secao">Quem compra com a gente</h2>
-        </div>
-
-        <ul class="segmentos">
-          <li class="segmento">
-            <h3>Hospitais</h3>
-            <p>Reposição para enfermaria, UTI e centro cirúrgico, com pedidos programados.</p>
-          </li>
-          <li class="segmento">
-            <h3>Clínicas</h3>
-            <p>O material do dia a dia: equipos, jelcos, luvas e eletrodos.</p>
-          </li>
-          <li class="segmento">
-            <h3>Laboratórios</h3>
-            <p>Cateteres e itens de punção para a rotina de coleta.</p>
-          </li>
-          <li class="segmento">
-            <h3>Home care</h3>
-            <p>Reposição para pacientes que são atendidos em casa.</p>
-          </li>
-          <li class="segmento">
-            <h3>Consultórios</h3>
-            <p>Pedidos pequenos, sem burocracia.</p>
-          </li>
-          <li class="segmento">
-            <h3>Prefeituras e órgãos públicos</h3>
-            <p>Com a documentação que o processo de compra pede.</p>
-          </li>
-        </ul>
-
-        <p class="atendemos__rodape">Seu serviço não está na lista? <a href="#contato">Conta pra gente o que você precisa.</a></p>
-      </div>
-    </section>
-
     <!-- ========== PRODUTOS ========== -->
     <!-- Para adicionar um produto, copie um bloco <article class="produto"> -->
     <section id="produtos" class="faixa-branca">
@@ -171,7 +203,7 @@
                   <div><dt>Comprimento</dt><dd>Informado na proposta</dd></div>
                   <div><dt>Venda</dt><dd>Por unidade</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
 
               <article class="produto">
@@ -182,7 +214,7 @@
                   <div><dt>Conexão</dt><dd>Luer lock ou luer slip</dd></div>
                   <div><dt>Venda</dt><dd>Por unidade</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
 
               <article class="produto">
@@ -194,7 +226,7 @@
                   <div><dt>Conexão</dt><dd>Luer lock ou luer slip</dd></div>
                   <div><dt>Venda</dt><dd>Por unidade</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
             </div>
           </section>
@@ -211,7 +243,7 @@
                   <div><dt>Calibres</dt><dd><span class="cor cor--rosa" aria-hidden="true"></span>20G rosa, <span class="cor cor--azul" aria-hidden="true"></span>22G azul</dd></div>
                   <div><dt>Venda</dt><dd>Por unidade</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
             </div>
           </section>
@@ -228,7 +260,7 @@
                   <div><dt>Uso</dt><dd>Adulto</dd></div>
                   <div><dt>Venda</dt><dd>Por unidade, em pacotes</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
             </div>
           </section>
@@ -245,7 +277,7 @@
                   <div><dt>Tamanhos</dt><dd>7,0 · 7,5 · 8,0</dd></div>
                   <div><dt>Venda</dt><dd>Por caixa</dd></div>
                 </dl>
-                <a class="produto__pedir" href="https://wa.me/5511900000000">Pedir orçamento</a>
+                <a class="produto__pedir" href="https://wa.me/5511969045009">Pedir orçamento</a>
               </article>
             </div>
           </section>
@@ -389,6 +421,7 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-whatsapp"/></svg>
   </a>
 
+  <script src="js/idiomas.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

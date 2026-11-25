@@ -698,6 +698,116 @@ section[id] { scroll-margin-top: 76px; }
   .idioma svg { width: 24px; height: 16px; }
 }
 
+/* ---------- Celular (até 600px) ---------- */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+
+  /* Espaçamentos e títulos mais compactos */
+  .titulo-secao { font-size: 32px; }
+  .produtos,
+  .atendemos,
+  .duvidas,
+  .contato,
+  .pedido .container { padding-block: 56px; }
+  .sobre { padding-block: 56px 32px; gap: 28px; }
+  .mvv { padding-bottom: 56px; gap: 14px; }
+  .produtos__titulo,
+  .atendemos__topo { margin-bottom: 28px; }
+
+  /* Início: sem o logo grande (ele já está no topo), botões do mesmo tamanho */
+  .hero { padding-top: 40px; padding-bottom: 16px; gap: 0; }
+  .hero h1 { font-size: clamp(32px, 9vw, 40px); }
+  .hero__texto { font-size: 17px; margin-top: 16px; }
+  .hero__acoes { flex-direction: column; margin-top: 24px; }
+  .hero__acoes .btn { justify-content: center; }
+  .hero > img { display: none; }
+  .pulso { height: 80px; }
+
+  /* Quem somos */
+  .sobre__visual { min-height: 0; padding: 36px 24px; border-radius: 24px; }
+  .sobre__frase { font-size: 24px; }
+  .mvv__card { padding: 24px 22px; }
+  .mvv__card h3 { font-size: 21px; margin-top: 12px; }
+
+  /* Quem atendemos */
+  .segmento { padding: 20px 0; }
+  .segmento h3 { font-size: 24px; }
+  .segmento p { font-size: 15px; }
+
+  /* Produtos: foto pequena ao lado do nome, ficha e botão embaixo */
+  .catalogo { gap: 40px; }
+  .grupo__itens { gap: 28px; }
+  .grupo__titulo { margin-bottom: 16px; }
+  .produto {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    column-gap: 16px;
+    align-items: start;
+  }
+  .produto__foto { grid-row: 1 / span 2; border-radius: 12px; }
+  .produto h4 { grid-column: 2; margin-top: 0; font-size: 18px; }
+  .produto__desc { grid-column: 2; margin-top: 4px; font-size: 14px; }
+  .ficha,
+  .produto__pedir { grid-column: 1 / -1; }
+  .ficha { margin-top: 14px; font-size: 14px; }
+  .produto__pedir {
+    justify-self: stretch;
+    margin-top: 14px;
+    padding: 12px;
+    border: 2px solid var(--verde);
+    border-radius: 24px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Como pedir: número ao lado do título */
+  .steps { gap: 0; margin-top: 28px; }
+  .steps li {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    padding: 18px 0;
+    border-top-width: 2px;
+  }
+  .steps__num { grid-row: 1 / span 2; font-size: 30px; line-height: 1; }
+  .steps h3 { margin: 2px 0 4px; font-size: 19px; }
+  .pedido__duvida { margin-top: 28px; }
+
+  /* Dúvidas */
+  .faq summary { padding: 18px 40px 18px 0; font-size: 17px; }
+  .faq details p { padding-right: 0; }
+
+  /* Contato */
+  .card { padding: 22px; border-radius: 20px; }
+  .card__valor { font-size: 19px; overflow-wrap: anywhere; }
+  .card--destaque .card__valor { font-size: 24px; }
+
+  /* Rodapé: espaço para o botão flutuante do WhatsApp não cobrir o texto */
+  .rodape__base { padding-bottom: 96px; }
+
+  /* Botão de WhatsApp um pouco menor */
+  .zap { width: 54px; height: 54px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+  .zap svg { width: 28px; height: 28px; }
+
+  /* Bandeiras com área de toque maior */
+  .idioma { padding: 6px 4px; }
+}
+
+/* Celulares estreitos (até 380px): topo mais compacto */
+@media (max-width: 380px) {
+  .header__inner { gap: 10px; }
+  .marca { gap: 8px; }
+  .marca__nome { font-size: 19px; }
+  .logo { width: 40px; height: 40px; }
+  .idioma { padding: 6px 3px; }
+  .produto { grid-template-columns: 88px minmax(0, 1fr); column-gap: 12px; }
+  .titulo-secao { font-size: 28px; }
+}
+
+/* Celulares bem pequenos (até 359px): esconde o nome ao lado do logo para tudo caber */
+@media (max-width: 359px) {
+  .marca__nome { display: none; }
+}
+
 /* ---------- Movimento reduzido ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

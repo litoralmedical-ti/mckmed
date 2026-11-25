@@ -5,7 +5,9 @@
   var d = document;
   var raiz = d.documentElement;
   var calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var WHATSAPP = 'https://wa.me/5511900000000';
+  // Número do WhatsApp: vem do botão flutuante (.zap) no HTML, para ficar num lugar só
+  var zapLink = document.querySelector('.zap');
+  var WHATSAPP = zapLink ? zapLink.href.split('?')[0] : 'https://wa.me/5511969045009';
 
   raiz.classList.add('js');
 
