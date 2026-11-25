@@ -283,7 +283,43 @@ section[id] { scroll-margin-top: 76px; }
 
 /* ---------- Produtos (catálogo organizado por categoria) ---------- */
 .produtos { padding-block: 88px; }
-.produtos__titulo { margin-bottom: 48px; }
+.produtos__cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: 48px;
+}
+
+/* Botões que levam ao catálogo completo (site externo) */
+.btn--catalogo { gap: 8px; }
+.btn--catalogo svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: translate .25s var(--suave);
+}
+.btn--catalogo:hover svg { translate: 2px -2px; }
+
+/* Chamada no fim da lista de produtos */
+.catalogo-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 32px;
+  margin-top: 64px;
+  padding: 32px 36px;
+  border-radius: 24px;
+  background: var(--fundo);
+}
+.catalogo-cta h3 { font-size: 24px; }
+.catalogo-cta p { margin: 6px 0 0; max-width: 34em; }
 
 /* Grade geral: Infusão ocupa a linha inteira; as categorias de 1 produto
    ficam lado a lado na linha de baixo */
@@ -711,8 +747,12 @@ section[id] { scroll-margin-top: 76px; }
   .pedido .container { padding-block: 56px; }
   .sobre { padding-block: 56px 32px; gap: 28px; }
   .mvv { padding-bottom: 56px; gap: 14px; }
-  .produtos__titulo,
+  .produtos__cabecalho,
   .atendemos__topo { margin-bottom: 28px; }
+  .produtos__cabecalho .btn--catalogo { width: 100%; justify-content: center; }
+  .catalogo-cta { margin-top: 44px; padding: 24px 22px; }
+  .catalogo-cta h3 { font-size: 21px; }
+  .catalogo-cta .btn--catalogo { width: 100%; justify-content: center; }
 
   /* Início: sem o logo grande (ele já está no topo), botões do mesmo tamanho */
   .hero { padding-top: 40px; padding-bottom: 16px; gap: 0; }

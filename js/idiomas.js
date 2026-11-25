@@ -138,6 +138,13 @@ window.MCKMED_TRADUCOES = {
   'Par de luvas cirúrgicas de látex': ['Pair of latex surgical gloves', '一副乳胶外科手套'],
   'Luva cirúrgica de látex': ['Latex surgical glove', '乳胶外科手套'],
 
+  // ---------- Catálogo completo ----------
+  'Ver catálogo completo': ['See full catalog', '查看完整产品目录'],
+  'Procurando outro item?': ['Looking for another item?', '在找其他产品？'],
+  'No catálogo completo você encontra toda a linha de produtos da MCKMED.':
+    ['Our full catalog has the complete MCKMED product line.', '完整产品目录中有 MCKMED 的全部产品。'],
+  'Abrir catálogo': ['Open catalog', '打开产品目录'],
+
   // ---------- Como pedir ----------
   'Como fazer seu pedido': ['How to place your order', '如何下单'],
   'Escolha os produtos': ['Choose the products', '选择产品'],

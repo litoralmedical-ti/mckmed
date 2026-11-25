@@ -186,7 +186,11 @@
     <!-- Para adicionar um produto, copie um bloco <article class="produto"> -->
     <section id="produtos" class="faixa-branca">
       <div class="container produtos">
-        <h2 class="titulo-secao produtos__titulo">Produtos</h2>
+        <div class="produtos__cabecalho">
+          <h2 class="titulo-secao produtos__titulo">Produtos</h2>
+          <!-- Catálogo completo (site externo, abre em nova aba) -->
+          <a href="https://catalogomckmed.vercel.app/" class="btn btn--azul btn--catalogo" target="_blank" rel="noopener">Ver catálogo completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
 
         <div class="catalogo">
 
@@ -282,6 +286,15 @@
             </div>
           </section>
 
+        </div>
+
+        <!-- Chamada para o catálogo completo -->
+        <div class="catalogo-cta">
+          <div>
+            <h3>Procurando outro item?</h3>
+            <p>No catálogo completo você encontra toda a linha de produtos da MCKMED.</p>
+          </div>
+          <a href="https://catalogomckmed.vercel.app/" class="btn btn--verde btn--catalogo" target="_blank" rel="noopener">Abrir catálogo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
     </section>
